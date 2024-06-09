@@ -1,0 +1,30 @@
+$color-grey: #f0f4f5;
+$color-primary: #226079;
+
+:root {
+  --color-primary: #{$color-primary};
+  --color-primary-lighter: #{lighten($color-primary, 10%)};
+  --color-primary-darker: #{darken($color-primary, 10%)};
+
+  --color-grey: #{$color-grey};
+  --color-grey-lighter: #{lighten($color-grey, 10%)};
+  --color-grey-darker: #{darken($color-grey, 10%)};
+
+  --color-body-bg: #f4f5f5;
+
+  --font-heading: 'Lora', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+
+  --container-padding-xs: 20px;
+  --container-padding-md: 30px;
+  --container-padding-lg: 40px;
+  --container-padding-xl: 50px;
+  --container-padding-xxl: 80px;
+}
+
+$screen-xs: 24.375em;
+$screen-sm: 36em;
+$screen-md: 48em;
+$screen-lg: 62em;
+$screen-xl: 75em;
+$screen-xxl: 90em;

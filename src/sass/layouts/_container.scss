@@ -1,0 +1,24 @@
+.container {
+  max-width: 576px;
+  margin: 0 auto;
+  padding-left: var(--container-padding-xs);
+  padding-right: var(--container-padding-xs);
+  @include respond(md) {
+    max-width: 768px;
+    padding-left: var(--container-padding-md);
+    padding-right: var(--container-padding-md);
+  }
+  @include respond(lg) {
+    max-width: 1440px;
+    padding-left: var(--container-padding-lg);
+    padding-right: var(--container-padding-lg);
+  }
+  @include respond(xl) {
+    padding-left: var(--container-padding-xl);
+    padding-right: var(--container-padding-xl);
+  }
+  @include respond(xxl) {
+    padding-left: var(--container-padding-xxl);
+    padding-right: var(--container-padding-xxl);
+  }
+}
