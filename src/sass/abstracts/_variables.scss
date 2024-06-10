@@ -1,5 +1,5 @@
-$color-grey: #f0f4f5;
-$color-primary: #226079;
+$color-grey: #f9fafc;
+$color-primary: #0a61f7;
 
 :root {
   --color-primary: #{$color-primary};
@@ -10,7 +10,7 @@ $color-primary: #226079;
   --color-grey-lighter: #{lighten($color-grey, 10%)};
   --color-grey-darker: #{darken($color-grey, 10%)};
 
-  --color-body-bg: #f4f5f5;
+  --color-body-bg: #fff;
 
   --font-heading: 'Rubik', sans-serif;
   --font-text: 'Rubik', sans-serif;
