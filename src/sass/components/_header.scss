@@ -2,36 +2,38 @@
   width: 100%;
   z-index: 2000;
   position: sticky;
-  top: 0;
-  background-color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  transition: all 0.2s ease-in-out;
+  background-color: #0a61f7;
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 76px;
   }
 
-  &__nav {
-    @include respond(lg) {
-      display: flex;
-      gap: 30px;
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__nav-list-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+
+    &hover {
+      transform: translateY(-2px);
     }
   }
+}
 
-  &__logo {
-    height: 46px;
-  }
-
-  &.scrolled:not(.menu-open) {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow: var(--box-shadow);
-    @include respond(lg) {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-  }
+.header.scrolled {
+  box-shadow: var(--box-shadow);
 }
