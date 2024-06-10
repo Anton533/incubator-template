@@ -1,20 +1,17 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 *,
 *::before,
 *::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: var(--font-text);
   font-size: 16px;
-  line-height: 2.125;
+  line-height: 1.5; /* 24/16 */
   font-weight: 300;
-  color: #565656;
+  color: #95a1bb;
   background-color: var(--color-body-bg);
 
   &.scroll-disabled {
