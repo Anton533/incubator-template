@@ -1,0 +1,61 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 150px;
+  //   display: grid;
+  //   justify-items: center;
+  //   grid-template-columns: 1fr 1fr;
+  //   column-gap: 50px;
+  //   padding-top: 150px;
+
+  //   @include respond-max(xl) {
+  //     grid-template-columns: 1fr;
+  //     grid-template-rows: 1fr 2fr;
+  //     padding-top: 100px;
+  //   }
+
+  @include respond-max(xl) {
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 80px;
+  }
+
+  &__content-box {
+    margin-top: 64px;
+    @include respond-max(xl) {
+      margin: 0 auto;
+    }
+    @include respond-max(md) {
+      margin: 0;
+    }
+  }
+
+  &__heading {
+    font-size: 52px;
+    // @include adaptiveValue('font-size', 58, 16, 1400, 390);
+    line-height: 1.17; /* 68/58 */
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    line-height: 1.375; /* 22/16 */
+    margin-bottom: 40px;
+    max-width: 380px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+
+    align-self: start;
+  }
+
+  img {
+    margin: 0 auto;
+    max-width: 656px;
+  }
+}

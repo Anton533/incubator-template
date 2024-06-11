@@ -1,13 +1,14 @@
 .container-wide {
   margin: 0 auto;
+  max-width: 1440px;
   padding-left: 130px;
   padding-right: 130px;
 
-  @include respond-max(lg) {
+  @include respond-max(xl) {
     padding-left: 60px;
     padding-right: 60px;
   }
-  @include respond-max(md) {
+  @include respond-max(lg) {
     padding-left: 15px;
     padding-right: 15px;
   }
