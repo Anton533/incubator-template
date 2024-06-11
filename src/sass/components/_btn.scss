@@ -1,0 +1,33 @@
+.btn {
+  font-weight: 500;
+  line-height: 19.6px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  border: 1px solid #0a61f7;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn--primary {
+  color: #fff;
+  font-size: 12px;
+  background-color: #0a61f7;
+  padding: 8px 40px;
+}
+.btn--primary:hover {
+  background-color: #3b81f9;
+  border-color: #3b81f9;
+}
+
+.btn--primary-outline {
+  color: #0a61f7;
+  font-size: 12px;
+  background: none;
+  padding: 8px 40px;
+}
+.btn--primary-outline:hover {
+  color: #3b81f9;
+  border-color: #3b81f9;
+}
