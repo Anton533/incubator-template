@@ -1,0 +1,67 @@
+.rates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f9fafc;
+
+  &__heading {
+    font-size: 32px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 40px;
+  }
+  &__table th {
+    min-width: 240px;
+    padding: 20px;
+  }
+  &__table td {
+    text-align: center;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid #95a1bb;
+    border-collapse: collapse;
+  }
+}
+
+.feature-header {
+  color: #95a1bb;
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+.standart-header,
+.plus-header,
+.pro-header {
+  color: #363940;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.theory-header,
+.practice-header,
+.code-review-header {
+  color: #363940;
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+.questions-header {
+  color: #0a61f7;
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+.questions-header td {
+  padding: 30px 50px;
+}

@@ -1,4 +1,5 @@
 @@include("header.html")
+
 <div class="container-wide">
     <section class="hero">
         <div class="hero__content-box">
@@ -12,5 +13,66 @@
         <img src="/img/hero-image.png" alt="Hero image" />
     </section>
 </div>
+
+<section class="rates">
+    <h2 class="rates__heading">Rates</h2>
+    <p class="rates__text">
+        Failure will never overtake me if my determination to succeed is
+        strong enough.
+    </p>
+    <table class="rates__table">
+        <tr>
+            <th class="feature-header">Feature</th>
+            <th class="standart-header">Standart</th>
+            <th class="plus-header">Plus</th>
+            <th class="pro-header">PRO</th>
+        </tr>
+        <tr>
+            <th class="theory-header">Theory</th>
+            <td class="standart-cell">
+                <img src="/img/icons/yes.svg" alt="" />
+                <!-- Feature -->
+            </td>
+            <td class="plus-cell">
+                <img src="/img/icons/yes.svg" alt="" />
+            </td>
+            <td class="pro-cell"><img src="/img/icons/yes.svg" alt="" /></td>
+        </tr>
+        <tr>
+            <th class="practice-header">Practice</th>
+            <td class="standart-cell">
+                <img src="/img/icons/no.svg" alt="" />
+            </td>
+            <td class="plus-cell">
+                <img src="/img/icons/yes.svg" alt="" />
+            </td>
+            <td class="pro-cell"><img src="/img/icons/yes.svg" alt="" /></td>
+        </tr>
+        <tr>
+            <th class="code-review-header">Code review</th>
+            <td class="standart-cell">
+                <img src="/img/icons/no.svg" alt="" />
+            </td>
+            <td class="plus-cell">
+                <img src="/img/icons/no.svg" alt="" />
+            </td>
+            <td class="pro-cell">
+                <img src="/img/icons/yes.svg" alt="" />
+            </td>
+        </tr>
+        <tr class="questions-header">
+            <th class="questions-header">Have questions?</th>
+            <td class="standart-cell">
+                <button class="btn btn--primary-outline">Get now</button>
+            </td>
+            <td class="plus-cell">
+                <button class="btn btn--primary">Get now</button>
+            </td>
+            <td class="pro-cell">
+                <button class="btn btn--primary-outline">Get now</button>
+            </td>
+        </tr>
+    </table>
+</section>
 
 @@include("footer.html")
