@@ -8,3 +8,12 @@
     ele.setAttribute('rel', 'noopener noreferrer');
   });
 })();
+
+////////////////////
+// nice-select2 lib
+(function createSelects() {
+  document.querySelectorAll('[data-nice-select]').forEach((select) => {
+    select.style.display = 'none';
+    NiceSelect.bind(select);
+  });
+})();

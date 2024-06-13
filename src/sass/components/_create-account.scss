@@ -1,6 +1,7 @@
 .create-account {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 30px;
   & > * {
     width: 50% !important;
   }
@@ -37,5 +38,65 @@
 
   &__features-list li {
     color: #363940;
+  }
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'name name'
+    'email possword'
+    'birth country'
+    'direction direction'
+    'technologies technologies'
+    'message message'
+    'btn btn';
+  max-width: 480px;
+  &__name {
+    grid-area: name;
+  }
+  &__email {
+    grid-area: email;
+  }
+  &__possword {
+    grid-area: possword;
+  }
+  &__birth {
+    grid-area: birth;
+  }
+  &__country {
+    grid-area: country;
+  }
+  &__direction {
+    display: flex;
+    gap: 30px;
+    grid-area: direction;
+
+    input {
+      margin-right: 8px;
+    }
+  }
+  &__technologies {
+    display: flex;
+    gap: 25px;
+    grid-area: technologies;
+    padding: 34px 15px;
+    border: 1px solid #95a1bb;
+    border-radius: 4px;
+
+    input {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+    }
+  }
+  &__message {
+    grid-area: message;
+  }
+  &__btn {
+    grid-area: btn;
+    padding: 15px 40px;
   }
 }

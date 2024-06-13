@@ -1,0 +1,61 @@
+.form-input,
+.form-select,
+.form-textarea {
+  font-family: inherit;
+  color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #95a1bb;
+  background: #fff;
+
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-input,
+.form-textarea {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.form-select {
+  padding-top: 7px;
+  min-height: 50px;
+}
+
+.form-input,
+.form-textarea {
+  &::placeholder {
+    color: #1e1e1ebf;
+  }
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2.125;
+
+  margin-bottom: 2px;
+}
+
+.form-textarea {
+  line-height: inherit;
+
+  resize: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #95a1bb !important;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #95a1bb !important;
+}

@@ -104,11 +104,64 @@
             </ul>
         </div>
 
-        <form action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <button class="btn btn--primary">Registration</button>
+        <form class="form">
+            <div class="form__name form-item">
+                <input class="form-input" type="text" required placeholder="Full Name*" id="field-1" />
+            </div>
+            <div class="form__email form-item">
+                <input class="form-input" type="text" required placeholder="Email*" id="field-2" />
+            </div>
+            <div class="form__possword form-item">
+                <input class="form-input" type="text" required placeholder="Password*" id="field-3" />
+            </div>
+            <div class="form__birth form-item">
+                <input class="form-input" type="text" placeholder="Date of Birth" id="field-4" />
+            </div>
+            <div class="form__country form-item">
+                <select class="form-select" name="" placeholder="Country" id="field-5" data-nice-select>
+                    <option value="1">Country-1</option>
+                    <option value="2">Country-2</option>
+                    <option value="3">Country-3</option>
+                    <option value="4">Country-4</option>
+                    <option value="5">Country-5</option>
+                </select>
+            </div>
+
+            <div class="form__direction form-item">
+                <div>
+                    <input type="checkbox">
+                    <label for="frontend">Frontend</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="backend">Backend</label>
+                </div>
+            </div>
+
+            <div class="form__technologies form-item">
+                <div>
+                    <input type="checkbox">
+                    <label for="frontend">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="backend">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="backend">React</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="backend">Styled components</label>
+                </div>
+            </div>
+
+            <div class="form__message form-item">
+                <textarea class="form-textarea" name="user-message" id="user-message"
+                    placeholder="Something else about you..." rows="2"></textarea>
+            </div>
+            <button class="form__btn btn btn--primary">Registration</button>
         </form>
     </section>
 </div>
